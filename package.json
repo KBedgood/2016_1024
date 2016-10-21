@@ -1,0 +1,31 @@
+{
+  "name": "tshirts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KBedgood/2016_0929_Week1_Day4_TailoredTShirts_kb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KBedgood/2016_0929_Week1_Day4_TailoredTShirts_kb/issues"
+  },
+  "homepage": "https://github.com/KBedgood/2016_0929_Week1_Day4_TailoredTShirts_kb#readme",
+  "devDependencies": {
+    "browser": "^0.2.6",
+    "browser-sync": "^2.17.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "sync": "^0.2.5"
+  },
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "moment": "^2.15.1",
+    "octicons": "^4.4.0"
+  }
+}

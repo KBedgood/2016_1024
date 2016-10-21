@@ -1,0 +1,24 @@
+@import "mixins";
+// Roboto:300,300i,400,500,700
+
+// body {
+//             font-family: 'Roboto', sans-serif;
+//             line-height: 1.4em;
+// }
+
+
+// .octicon {
+//   display: inline-block;
+//   vertical-align: text-top;
+//   fill: currentColor; }
+
+
+nav {
+            height: 50px;
+            width: 100%;
+            background-color: #F9F9F9;
+                        img {
+                        margin-left: 70px;
+                        margin-top: 6px;
+                        max-height: 77px;
+            }

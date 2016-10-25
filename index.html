@@ -8,15 +8,15 @@
             <meta name='author' content='Kristie Bedgood'>
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
             <!--             <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
- -->
+-->
             <link rel="stylesheet" type="text/css" href="css/main.css">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
             <nav class="nav">
-                        <div>
-                                    <img class="logo" src="images/mark-github.svg" alt="">
+                        <div class="navSearch">
+                                    <img class="logo" src="/images/mark-github.svg" alt="">
                                     <input type="text" placeholder="Search GitHub"></input>
                         </div>
                         <ul class="gitLinks">
@@ -25,26 +25,83 @@
                                     <li><a href="#">Blog</a></li>
                                     <li><a href="#">Help</a></li>
                         </ul>
+                        <div class="profile">
+                                    <img class="profilePic" src="/images/kb_profile.jpg" alt="">
+                                    <p>KBedgood</p>
+                        </div>
                         <ul class="profileLinks">
-                                    <li><img class="logo" src="kb_profile.jpg" alt=""></li>
-                                    <li>
-                                                <p>KBedgood</p>
-                                    </li>
-                                    <li><img class="plus" src="plus.svg" alt=""></li>
-                                    <li><img class="logo" src="triangle-down.svg" alt=""></li>
-                                    <li><img class="logo" src="inbox.svg" alt=""></li>
-                                    <li><img class="logo" src="gear.svg" alt=""></li>
-                                    <li><img class="logo" src="sign-out.svg" alt=""></li>
+                                    <li><img class="plus" src="/images/plus.svg" alt=""></li>
+                                    <li><img class="triangleDown" src="/images/triangle-down.svg" alt=""></li>
+                                    <li><img class="inbox" src="/images/inbox.svg" alt=""></li>
+                                    <li><img class="gear" src="/images/gear.svg" alt=""></li>
+                                    <li><img class="signOut" src="/images/sign-out.svg" alt=""></li>
                         </ul>
                         </div>
                         </div>
             </nav>
-            <div>
+            <div class="container">
+                        <row class="left">
+                                    <section class="gitHubProfile">
+                                                <div id="gitHubProfilePhoto"></div>
+                                                <h3 id="fullName"></h3>
+                                                <h5 id="userName"></h5>
+                                    </section>
+                                    <section class="gitHubProfileData">
+                                                <div id="gitHubTitle"><img class="octiconDev" src="/images/circuit-board.svg" alt=""></div>
+                                                <div id="gitHubWork"><img class="octiconWork" src="/images/mortar-board.svg" alt=""></div>
+                                                <div id="gitHubLocation"><img class="octiconLocation" src="/images/location.svg" alt=""></div>
+                                                <div id="gitHubWebSite"><img class="octiconLink" src="/images/link.svg" alt=""></div>
+                                                <div id="gitHubJoined"><img class="octiconClock" src="/images/clock.svg" alt=""></div>
+                                    </section>
+                                    <section class="gitHubNumbers">
+                                                <div class="followers">
+                                                            <h4 id="followers"></h4>
+                                                            <p>Followers</p>
+                                                </div>
+                                                <div class="starred">
+                                                            <h4 id="starred"></h4>
+                                                            <p>Starred</p>
+                                                </div>
+                                                <div class="following">
+                                                            <h4 id="following"></h4>
+                                                            <p>Following</p>
+                                                </div>
+                                    </section>
+                                    <section>
+                                                <h4>Orangizations</h4>
+                                                <div class="gitHubOrgLogos">
+                                                </div>
+                                    </section>
+                        </row>
+                        <row class="right">
+                                    <div>
+                                                <button class="button"><img class="octiconLocation" src="/images/pencil.svg" alt="">Edit Profile</button>
+                                    </div>
+                                    <!--Bootstrap Tabs -->
+                                    <div>
+                                                <!-- Nav tabs -->
+                                                <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation"><a href="#contributions" aria-controls="contributions" role="tab" data-toggle="tab">Contributions</a></li>
+                                                            <li role="presentation"><a href="#repositories" aria-controls="repositories" role="tab" data-toggle="tab">Repositories</a></li>
+                                                            <li role="presentation" class="active"><a href="#publicActivity" aria-controls="publicActivity" role="tab" data-toggle="tab">Public Activity</a></li>
+                                                </ul>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane active" id="contributions">..hj.</div>
+                                                            <div role="tabpanel" class="tab-pane" id="repositories">..ll.</div>
+                                                            <div role="tabpanel" class="tab-pane" id="publicActivity">
+                                                                        <!--                                                                   public activity goes here
+ -->
+                                                            </div>
+                                                </div>
+                                    </div>
+                                    <!-- Git activity list -->
+                        </row>
             </div>
-            <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="js/main.js"></script>
+            <script src=" http://code.jquery.com/jquery-1.12.4.min.js " integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin=" anonymous "></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js "></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+            <script type="text/javascript " src="main.js "></script>
 </body>
 
 </html>

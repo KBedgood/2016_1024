@@ -1,0 +1,25 @@
+/*Mixin Examples*/
+
+
+/*@include center()*/
+
+
+@mixin center() {
+            margin: 0px auto;
+}
+
+// @mixin pointer() {
+//             width: 40px;
+//             height: 40px;
+//             background-color: blue;
+//             transform: rotate(45deg);
+//             margin-left: -60px;
+// }
+
+@mixin footer() {
+            font-family: helvetica, serif;
+            font-size: 12px;
+            margin-top: 64px;
+            color: grey;
+            text-align: center;
+}

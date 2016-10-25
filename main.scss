@@ -1,24 +1,120 @@
 @import "mixins";
 // Roboto:300,300i,400,500,700
-
 // body {
 //             font-family: 'Roboto', sans-serif;
 //             line-height: 1.4em;
 // }
-
-
 // .octicon {
 //   display: inline-block;
 //   vertical-align: text-top;
 //   fill: currentColor; }
+.container {
+            width: 990px;
+}
 
+body {
+            color: #333;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            line-height: 21px;
+}
 
 nav {
-            height: 50px;
             width: 100%;
             background-color: #F9F9F9;
-                        img {
-                        margin-left: 70px;
-                        margin-top: 6px;
-                        max-height: 77px;
+            .navSearch {
+                        float: left;
+                        margin-left: 120px;
+                        margin-top: 10px;
+                        width: 444px;
+                        input {
+                                    width: 400px;
+                        }
             }
+            .gitLinks {
+                        width: 333px;
+                        float: left;
+                        li {
+                                    padding: 15px;
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    color: black;
+                                    list-style: none;
+                                    a {
+                                                color: black;
+                                    }
+                        }
+            }
+            .profile {
+                        width: 111px;
+                        float: left;
+                        display: inline-block;
+                        padding: 15px 0;
+                        img {
+                                    // -moz-border-radius: 6px;
+                                    float: left;
+                                    max-height: 16px;
+                                    padding-right: 8px;
+                        }
+                        p {
+                                    float: left;
+                                    font-size: 10px;
+                                    font-weight: bold;
+                        }
+            }
+            .profileLinks {
+                        width: 392px;
+                        float: left;
+                        li {
+                                    padding: 15px;
+                                    padding-right: 5px;
+                                    display: inline-block;
+                                    font-size: 12px;
+                                    color: black;
+                                    list-style: none;
+                        }
+            }
+}
+
+.left {
+            display: inline-block;
+            width: 30%;
+            padding-right: 32px;
+            img {
+                        max-width: 95%;
+                        padding-right: 9px;
+                        padding-top: 9px;
+                        border-radius: 19px;
+                        h3 {
+                                    font-size: 23px;
+                                    font-weight: bold;
+                                    h5 {
+                                                font-size: 14px;
+                                                color: grey;
+                                                padding-bottom: 10px;
+                                                .octiconDev {
+                                                            color: grey;
+                                                }
+                                    }
+                        }
+            }
+}
+
+.gitHubProfileData p {
+            display: inline-block;
+            border-bottom: .5px;
+            border-top: .5px;
+}
+
+.right {
+            float: right;
+            padding-top: 6px;
+            width: 70%;
+            .button {
+                        float: right;
+                        margin-top: 10px;
+            }
+            #publicActivity img {
+                        max-width: 15px;
+            }
+}

@@ -32,21 +32,8 @@ $(document).ready(function() {
         }
     });
 
-    $.ajax({
-        method: "GET",
-        url: "https://api.github.com/users/kbedgood",
-        success: function(result) {
-            console.log(result);
-
-            $("#starred").append(`${result.stargazers_count}`);
-
-        }
-    });
 
 
-    //GitHub PUBLIC ACTIVITY
-
-    var publicActivity = document.getElementById('#gitHubActivity');
 
 
     $.ajax({
@@ -59,21 +46,24 @@ $(document).ready(function() {
                 if (repo.type === "PushEvent") {
 
                     $("#publicActivity").append(`
-            	<div class="gitHubPublicActivity">
-                                                <div class="octiconActivity">
-                                                            <img class="octiconLocation" src="/images/git-commit.svg" alt="">
-                                                </div>
-                                                <h6 id="publicActivityTime"></h6>
-                                                <h5 id="gitHubActivity"></h5>
-                                                <img id="profilePicMedium" src="${repo.actor.avatar_url}" alt="">
-                                                <img id="profilePicSmall" src="" alt="">
-                                                <h5 id="gitHubTask">${repo.id}</h5>
-                                                <h5 class="gitTaskMessage">${repo.payload.commits[0].message}</h5>
-                                                <div>
-                                                </div>
-                                    </div>
+<div class="gitHubPublicActivity">
+<div class="octiconActivity">
+<span class="octicon octicon-git-commit"></span>
+<div class="gitPathway">
+<h6 class="publicActivityTime">${repo.created_at}</h6>
+<h5 class="gitHubActivity">kbedgood </h5> <h5 class="regText">pushed to</h5> <h5 class="gitBranch"> ${repo.payload.ref}</h5> <h5 class="at"> at </h5> <h5 class="tiy"> TIY-Cincinnati-Front-End</h5>
+</div>
+<img class="profilePicMedium" src="${repo.actor.avatar_url}" alt="">
+<div class="repoInfo">
+<img class="profilePicSmall" src="${repo.actor.avatar_url}" alt="">
+<h5 class="gitHubTask">${repo.id}</h5> 
+<h5 class="gitTaskMessage">${repo.payload.commits[0].message}</h5>
+</div>
+<div>
+</div>
+</div>
 
-            	`)
+`)
                 }
             })
 
@@ -81,23 +71,33 @@ $(document).ready(function() {
     });
 
 
-var string = repo.payload.ref;
 
-var array = string.split('/');
-
-var repoName = array[2];
-
-console.log(repoName);
-
+    // This is the ajax method to get all your repos. This should loop through result and 
+    // write each of your repos to $('#repositories'). Use what you did above as reference. 
     $.ajax({
         method: "GET",
         url: "https://api.github.com/users/kbedgood/repos",
         success: function(result) {
             console.log(result);
+            result.forEach(function(repo) {
+
+
+                $("#repositories").append(`
+<div class="gitHubRepository">
+<div class="left">
+<h3 class="repoUpdated">Updated ${repo.updated_at}</h3>
+<h3 class="repoName">${repo.name}</h3>
+
+</div>
+<div class ="right">
+<h6>${repo.language} <span class="octicon octicon-star"></span>${repo.stargazers_count}<span class="octicon octicon-git-branch"></span>${repo.forks_count}</h6>
+</div>
+
+
+</div>
+`)
+
+            });
         }
-
-
-
     });
-
 });

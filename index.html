@@ -9,6 +9,7 @@
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
             <!--             <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700" rel="stylesheet">
 -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css" />
             <link rel="stylesheet" type="text/css" href="css/main.css">
             <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -16,8 +17,8 @@
 <body>
             <nav class="nav">
                         <div class="navSearch">
-                                    <img class="logo" src="/images/mark-github.svg" alt="">
-                                    <input type="text" placeholder="Search GitHub"></input>
+                                    <span class="octicon octicon-mark-github"></span>
+                                    <input type="text" placeholder="Search GitHub" class="inputText"></input>
                         </div>
                         <ul class="gitLinks">
                                     <li><a href="#">Explore</a></li>
@@ -27,14 +28,14 @@
                         </ul>
                         <div class="profile">
                                     <img class="profilePic" src="/images/kb_profile.jpg" alt="">
-                                    <p>KBedgood</p>
+                                    <p class="kristie">KBedgood</p>
                         </div>
                         <ul class="profileLinks">
-                                    <li><img class="plus" src="/images/plus.svg" alt=""></li>
-                                    <li><img class="triangleDown" src="/images/triangle-down.svg" alt=""></li>
-                                    <li><img class="inbox" src="/images/inbox.svg" alt=""></li>
-                                    <li><img class="gear" src="/images/gear.svg" alt=""></li>
-                                    <li><img class="signOut" src="/images/sign-out.svg" alt=""></li>
+                                    <li><span class="octicon octicon-plus"></span></li>
+                                    <li><span class="octicon octicon-triangle-down"></span></li>
+                                    <li><span class="octicon octicon-inbox"></span></li>
+                                    <li><span class="octicon octicon-gear"></span></li>
+                                    <li><span class="octicon octicon-sign-out"></span></li>
                         </ul>
                         </div>
                         </div>
@@ -46,25 +47,24 @@
                                                 <h3 id="fullName"></h3>
                                                 <h5 id="userName"></h5>
                                     </section>
-                                    <section class="gitHubProfileData">
-                                                <div id="gitHubTitle"><img class="octiconDev" src="/images/circuit-board.svg" alt=""></div>
-                                                <div id="gitHubWork"><img class="octiconWork" src="/images/mortar-board.svg" alt=""></div>
-                                                <div id="gitHubLocation"><img class="octiconLocation" src="/images/location.svg" alt=""></div>
-                                                <div id="gitHubWebSite"><img class="octiconLink" src="/images/link.svg" alt=""></div>
-                                                <div id="gitHubJoined"><img class="octiconClock" src="/images/clock.svg" alt=""></div>
+                                    <section class="gitHubTitle">
+                                                <div id="gitHubTitle"><span class="octicon octicon-circuit-board"></span></div>
+                                    </section>
+                                    <section class="gitHubDetails">
+                                                <div id="gitHubWork"><span class="octicon octicon-briefcase"></span></div>
+                                                <div id="gitHubLocation"><span class="octicon octicon-location"></span></span>
+                                                </div>
+                                                <div id="gitHubWebSite"><span class="octicon octicon-link"></span></div>
+                                                <div id="gitHubJoined"><span class="octicon octicon-clock"></span></div>
                                     </section>
                                     <section class="gitHubNumbers">
                                                 <div class="followers">
                                                             <h4 id="followers"></h4>
-                                                            <p>Followers</p>
-                                                </div>
-                                                <div class="starred">
-                                                            <h4 id="starred"></h4>
-                                                            <p>Starred</p>
+                                                            <p class="title">Followers</p>
                                                 </div>
                                                 <div class="following">
                                                             <h4 id="following"></h4>
-                                                            <p>Following</p>
+                                                            <p class="title">Following</p>
                                                 </div>
                                     </section>
                                     <section>
@@ -75,7 +75,7 @@
                         </row>
                         <row class="right">
                                     <div>
-                                                <button class="button"><img class="octiconLocation" src="/images/pencil.svg" alt="">Edit Profile</button>
+                                                <button class="button"><span class="octicon octicon-pencil"></span>Edit Profile</button>
                                     </div>
                                     <!--Bootstrap Tabs -->
                                     <div>
@@ -87,11 +87,11 @@
                                                 </ul>
                                                 <!-- Tab panes -->
                                                 <div class="tab-content">
-                                                            <div role="tabpanel" class="tab-pane active" id="contributions">..hj.</div>
-                                                            <div role="tabpanel" class="tab-pane" id="repositories">..ll.</div>
-                                                            <div role="tabpanel" class="tab-pane" id="publicActivity">
+                                                            <div role="tabpanel" class="tab-pane" id="contributions"></div>
+                                                            <div role="tabpanel" class="tab-pane" id="repositories"></div>
+                                                            <div role="tabpanel" class="tab-pane active" id="publicActivity">
                                                                         <!--                                                                   public activity goes here
- -->
+-->
                                                             </div>
                                                 </div>
                                     </div>

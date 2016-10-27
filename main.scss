@@ -24,17 +24,17 @@
                                     background-color: #F9F9F9;
                                     .navSearch {
                                                 float: left;
-                                                margin-left: 222px;
+                                                margin-left: 295px;
                                                 margin-top: 10px;
                                                 width: 405px;
                                                 input {
-                                                            width: 350px;
+                                                            width: 400px;
                                                 }
                                     }
                                     .gitLinks {
                                                 float: left;
                                                 font-weight: bold;
-                                                margin-left: -33px;
+                                                margin-left: -49px;
                                                 width: 246px;
                                                 li {
                                                             color: black;
@@ -51,8 +51,8 @@
                                     .profile {
                                                 display: inline-block;
                                                 float: left;
-                                                margin-left: -50px;
-                                                margin-right: 21px;
+                                                margin-left: 89px;
+                                                margin-right: 8px;
                                                 padding: 15px 0;
                                                 width: 111px;
                                                 margin-top: 3px;
@@ -101,19 +101,18 @@
                                                             font-size: 23px;
                                                             font-weight: bold;
                                                 }
-
                                                 .userName {
-                                                                        font-size: 14px;
-                                                                        padding-bottom: 20px;
-                                                                        padding-top: 0px;
-                                                            }
+                                                            font-size: 14px;
+                                                            padding-top: 0px;
+                                                            color: #BBBBBB;
+                                                }
                                     }
                         }
                         
                         .gitHubTitle {
                                     border-bottom: 1px solid #BBBBBB;
                                     border-top: 1px solid #BBBBBB;
-                                    margin-top: 29px;
+                                    margin-top: 26px;
                                     margin-bottom: 20px;
                                     color: #2362AE;
                                     padding-top: 10px;
@@ -272,7 +271,7 @@
                         .octicon-mark-github {
                                     font-size: 38px;
                                     margin-right: 8px;
-                                    margin-left: -78px;
+                                    margin-left: -63px;
                         }
                         
                         .inputText {

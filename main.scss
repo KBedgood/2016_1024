@@ -1,147 +1,125 @@
                         @import "mixins";
-// Roboto:300,300i,400,500,700
-// body {
-//             font-family: 'Roboto', sans-serif;
-//             line-height: 1.4em;
-// }
-// .octicon {
-//   display: inline-block;
-//   vertical-align: text-top;
-//   fill: currentColor; }
-.container {
-            width: 990px;
-}
-
-body {
-            color: #333;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 12px;
-            line-height: 21px;
-}
-
-nav {
-            width: 100%;
-            background-color: #F9F9F9;
-            .navSearch {
-                        float: left;
-                        margin-left: 300px;
-                        margin-top: 10px;
-                        width: 405px;
-                        input {
-                                    width: 350px;
+                        // Roboto:300,300i,400,500,700
+                        // body {
+                        //             font-family: 'Roboto', sans-serif;
+                        //             line-height: 1.4em;
+                        // }
+                        // .octicon {
+                        //   display: inline-block;
+                        //   vertical-align: text-top;
+                        //   fill: currentColor; }
+                        .container {
+                                    width: 990px;
                         }
-            }
-            .gitLinks {
-                        float: left;
-                        font-weight: bold;
-                        margin-left: -33px;
-                        width: 337px;
-                        li {
-                                    color: black;
-                                    display: inline-block;
-                                    font-size: 12px;
-                                    list-style: outside none none;
-                                    padding-right: 8px;
-                                    padding-top: 19px;
-                                    a {
-                                                color: black;
-                                    }
-                        }
-            }
-            .profile {
-                        display: inline-block;
-                        float: left;
-                        margin-left: 20px;
-                        margin-right: 32px;
-                        padding: 15px 0;
-                        width: 111px;
-                        margin-top: 3px;
-                        img {
-                                    // -moz-border-radius: 6px;
-                                    float: left;
-                                    max-height: 20px;
-                                    padding-right: 8px;
-                        }
-                        p {
-                                    float: left;
-                                    font-size: 12px;
-                                    font-weight: bold;
-                        }
-            }
-            .profileLinks {
-                        float: left;
-                        margin-left: -42px;
-                        width: 354px;
-                        padding-left: 0px;
-                        padding-top: 4px;
-                        li {
-                                    color: black;
-                                    display: inline-block;
-                                    font-size: 12px;
-                                    list-style: outside none none;
-                                    padding-left: 9px;
-                                    padding-top: 16px;
-                        }
-            }
-}
-
-.left {
-            display: inline-block;
-            width: 30%;
-            padding-right: 32px;
-            .gitHubProfile {
-                        #gitHubProfilePhoto {
-                                    img {
-                                                max-width: 95%;
-                                                padding-right: 9px;
-                                                padding-top: 9px;
-                                                h3 {
-                                                            font-size: 23px;
-                                                            font-weight: bold;
-                                                            h5 {
-                                                                        font-size: 14px;
-                                                                        padding-bottom: 20px;
-                                                            }
-                                                }
-                                    }
-                        }
-                        .gitHubTitle {
-                                    border-bottom: 1px solid #bbbbbb;
-                                    border-top: 1px solid #bbbbbb;
-                                    color: #2362ae;
-                                    margin-bottom: 13px;
-                                    margin-top: 20px;
-                                    padding-bottom: 15px;
-                                    padding-top: 10px;
-                        }
-                        {
-                                    box-sizing: border-box;
-                        }
+                        
                         body {
                                     color: #333;
                                     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                                     font-size: 12px;
                                     line-height: 21px;
                         }
-                        body {
-                                    color: #333;
-                                    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-                                    font-size: 14px;
-                                    line-height: 1.42857;
+                        
+                        nav {
+                                    width: 100%;
+                                    background-color: #F9F9F9;
+                                    .navSearch {
+                                                float: left;
+                                                margin-left: 222px;
+                                                margin-top: 10px;
+                                                width: 405px;
+                                                input {
+                                                            width: 350px;
+                                                }
+                                    }
+                                    .gitLinks {
+                                                float: left;
+                                                font-weight: bold;
+                                                margin-left: -33px;
+                                                width: 246px;
+                                                li {
+                                                            color: black;
+                                                            display: inline-block;
+                                                            font-size: 12px;
+                                                            list-style: outside none none;
+                                                            padding-right: 8px;
+                                                            padding-top: 19px;
+                                                            a {
+                                                                        color: black;
+                                                            }
+                                                }
+                                    }
+                                    .profile {
+                                                display: inline-block;
+                                                float: left;
+                                                margin-left: -50px;
+                                                margin-right: 21px;
+                                                padding: 15px 0;
+                                                width: 111px;
+                                                margin-top: 3px;
+                                                img {
+                                                            // -moz-border-radius: 6px;
+                                                            float: left;
+                                                            max-height: 20px;
+                                                            padding-right: 8px;
+                                                }
+                                                p {
+                                                            float: left;
+                                                            font-size: 12px;
+                                                            font-weight: bold;
+                                                }
+                                    }
+                                    .profileLinks {
+                                                float: left;
+                                                margin-left: -33px;
+                                                width: 200px;
+                                                padding-left: 0px;
+                                                padding-top: 4px;
+                                                li {
+                                                            color: black;
+                                                            display: inline-block;
+                                                            font-size: 12px;
+                                                            list-style: outside none none;
+                                                            padding-left: 9px;
+                                                            padding-top: 16px;
+                                                }
+                                    }
                         }
-                        html {
-                                    font-size: 10px;
-                        }
-                        .followers {
-                                    width: 40%;
+                        
+                        .left {
                                     display: inline-block;
-                                    padding-right: 5px;
-                                    margin-left: 20px;
+                                    width: 30%;
+                                    padding-right: 32px;
+                                    .gitHubProfile {
+                                                #gitHubProfilePhoto {
+                                                            img {
+                                                                        max-width: 95%;
+                                                                        padding-right: 9px;
+                                                                        padding-top: 9px;
+                                                            }
+                                                }
+                                                .fullName {
+                                                            font-size: 23px;
+                                                            font-weight: bold;
+                                                }
+
+                                                .userName {
+                                                                        font-size: 14px;
+                                                                        padding-bottom: 20px;
+                                                                        padding-top: 0px;
+                                                            }
+                                    }
                         }
-                        .following {
-                                    width: 40%;
-                                    display: inline-block;
+                        
+                        .gitHubTitle {
+                                    border-bottom: 1px solid #BBBBBB;
+                                    border-top: 1px solid #BBBBBB;
+                                    margin-top: 29px;
+                                    margin-bottom: 20px;
+                                    color: #2362AE;
+                                    padding-top: 10px;
+                                    padding-bottom: 10px;
                         }
+                        
                         .gitHubNumbers {
                                     border-bottom: 1px solid #BBBBBB;
                                     border-top: 1px solid #BBBBBB;
@@ -149,14 +127,28 @@ nav {
                                     margin-top: 19px;
                                     width: 100%;
                         }
-                        h4 {
-                                    font-size: 18px;
+                        
+                        #followers,
+                        #following {
+                                    color: #235294;
+                                    font-size: 34px;
+                                    font-weight: 700;
+                                    margin-bottom: -2px;
+                                    text-align: center;
                         }
-                        .gitHubProfileData p {
+                        
+                        .followers {
+                                    width: 40%;
                                     display: inline-block;
-                                    border-bottom: .5px;
-                                    border-top: .5px;
+                                    padding-right: 5px;
+                                    margin-left: 20px;
                         }
+                        
+                        .following {
+                                    width: 40%;
+                                    display: inline-block;
+                        }
+                        
                         .right {
                                     float: right;
                                     padding-top: 6px;
@@ -171,13 +163,22 @@ nav {
                                                 padding-top: 3px;
                                                 padding-bottom: 3px;
                                     }
-                                    .nav .nav-tabs {
-                                                li {}
-                                    }
-                                    .tab-content {
-                                                .tab-pane {}
-                                    }
                         }
+                        
+                        html {
+                                    font-size: 10px;
+                        }
+                        
+                        h4 {
+                                    font-size: 18px;
+                        }
+                        
+                        .gitHubProfileData p {
+                                    display: inline-block;
+                                    border-bottom: .5px;
+                                    border-top: .5px;
+                        }
+                        
                         .publicActivityTime {
                                     border-top: 1px solid #BBBBBB;
                                     color: #BBBBBB;
@@ -185,15 +186,18 @@ nav {
                                     margin-top: 27px;
                                     padding-top: 12px;
                         }
+                        
                         .gitHubActivity {
                                     color: #23528A;
                                     display: inline-block;
                                     margin-top: 0px;
                         }
+                        
                         .regText {
                                     color: black;
                                     display: inline-block;
                         }
+                        
                         .octicon-git-commit {
                                     color: #BBBBBB;
                                     font-size: 28px;
@@ -202,21 +206,26 @@ nav {
                                     margin-right: 15px;
                                     margin-top: 6px;
                         }
+                        
                         .gitPathway {
                                     display: block;
                         }
+                        
                         .gitBranch {
                                     color: #23528A;
                                     display: inline-block;
                         }
+                        
                         .at {
                                     color: black;
                                     display: inline-block;
                         }
+                        
                         .tiy {
                                     color: #23528A;
                                     display: inline-block;
                         }
+                        
                         .profilePicMedium {
                                     display: inline-block;
                                     width: 5%;
@@ -224,25 +233,30 @@ nav {
                                     margin-right: 8px;
                                     margin-left: 43px;
                         }
+                        
                         .profilePicSmall {
                                     display: inline-block;
                                     width: 3%;
                                     float: left;
                                     margin-right: 12px;
                         }
+                        
                         .gitHubTask {
                                     display: inline;
                                     width: 25%;
                                     color: #235294;
                                     padding-top: 0px;
                         }
+                        
                         .gitTaskMessage {
                                     display: inline;
                                     width: 25%;
                         }
+                        
                         .repoInfo {
                                     display: inline;
                         }
+                        
                         .gitHubRepository {
                                     .left {
                                                 .repoUpdated {
@@ -254,24 +268,31 @@ nav {
                                                 }
                                     }
                         }
+                        
                         .octicon-mark-github {
                                     font-size: 38px;
                                     margin-right: 8px;
+                                    margin-left: -78px;
                         }
+                        
                         .inputText {
                                     margin-top: 6px;
                                     position: absolute;
                         }
+                        
                         .octicon-plus {
                                     margin-right: -10px;
                         }
+                        
                         .octicon-triangle-down {
                                     font-size: 12px;
                         }
+                        
                         .octicon-pencil {
                                     font-size: 14px;
                                     padding-right: 4px;
                         }
+                        
                         .octicon-circuit-board,
                         .octicon-briefcase,
                         .octicon-location,
@@ -280,21 +301,4 @@ nav {
                                     color: #BBBBBB;
                                     padding-right: 8px;
                                     margin-top: 7px;
-                        }
-                        #followers,
-                        #following {
-                                    color: #235294;
-                                    font-size: 34px;
-                                    font-weight: 700;
-                                    margin-bottom: -2px;
-                                    text-align: center;
-                        }
-                        #gitHubTitle {
-                                    border-bottom: 1px solid #BBBBBB;
-                                    border-top: 1px solid #BBBBBB;
-                                    margin-top: 20px;
-                                    margin-bottom: 20px;
-                                    color: #2362AE;
-                                    padding-top: 10px;
-                                    padding-bottom: 10px;
                         }

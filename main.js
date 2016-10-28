@@ -85,12 +85,13 @@ $(document).ready(function() {
                 $("#repositories").append(`
 <div class="gitHubRepository">
 <div class="left">
-<h3 class="repoUpdated">Updated ${repo.updated_at}</h3>
 <h3 class="repoName">${repo.name}</h3>
+<h3 class="repoUpdated">Updated ${repo.updated_at}</h3>
+
 
 </div>
 <div class ="right">
-<h6>${repo.language} <span class="octicon octicon-star"></span>${repo.stargazers_count}<span class="octicon octicon-git-branch"></span>${repo.forks_count}</h6>
+<h6>${repo.language} <span class="octicon octicon-star">  </span> ${repo.stargazers_count} <span class="octicon octicon-git-branch"> </span>${repo.forks_count}</h6>
 </div>
 
 

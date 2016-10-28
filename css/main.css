@@ -14,7 +14,7 @@ nav {
   background-color: #F9F9F9; }
   nav .navSearch {
     float: left;
-    margin-left: 295px;
+    margin-left: 228px;
     margin-top: 10px;
     width: 405px; }
     nav .navSearch input {
@@ -73,20 +73,21 @@ nav {
     padding-top: 9px; }
   .left .gitHubProfile .fullName {
     font-size: 23px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 3px; }
   .left .gitHubProfile .userName {
     font-size: 14px;
-    padding-top: 0px;
+    margin-top: 0;
     color: #BBBBBB; }
 
 .gitHubTitle {
   border-bottom: 1px solid #BBBBBB;
   border-top: 1px solid #BBBBBB;
-  margin-top: 26px;
-  margin-bottom: 20px;
+  margin-top: 23px;
+  margin-bottom: 13px;
   color: #2362AE;
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 17px; }
 
 .gitHubNumbers {
   border-bottom: 1px solid #BBBBBB;
@@ -203,12 +204,25 @@ h4 {
 .repoInfo {
   display: inline; }
 
-.gitHubRepository .left .repoUpdated {
-  font-size: 12px;
-  color: #BBBBBB; }
-
-.gitHubRepository .left .repoName {
-  font-size: 14px; }
+.gitHubRepository {
+  width: 100%; }
+  .gitHubRepository .left .repoUpdated {
+    font-size: 11px;
+    color: #BBBBBB;
+    margin-top: 0px; }
+  .gitHubRepository .left .repoName {
+    font-size: 14px;
+    color: #235294; }
+  .gitHubRepository .right {
+    width: 30%;
+    display: left;
+    font-size: 9px; }
+    .gitHubRepository .right h6 .octicon-star .octicon-git-branch {
+      margin-left: 8px;
+      padding-right: 5px; }
+      .gitHubRepository .right h6 .octicon-star .octicon-git-branch .octicon-git-branch {
+        padding-right: 5px;
+        padding-left: 5px; }
 
 .octicon-mark-github {
   font-size: 38px;

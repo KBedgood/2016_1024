@@ -24,7 +24,7 @@
                                     background-color: #F9F9F9;
                                     .navSearch {
                                                 float: left;
-                                                margin-left: 295px;
+                                                margin-left: 228px;
                                                 margin-top: 10px;
                                                 width: 405px;
                                                 input {
@@ -100,10 +100,11 @@
                                                 .fullName {
                                                             font-size: 23px;
                                                             font-weight: bold;
+                                                            margin-bottom: 3px;
                                                 }
                                                 .userName {
                                                             font-size: 14px;
-                                                            padding-top: 0px;
+                                                            margin-top: 0;
                                                             color: #BBBBBB;
                                                 }
                                     }
@@ -112,11 +113,11 @@
                         .gitHubTitle {
                                     border-bottom: 1px solid #BBBBBB;
                                     border-top: 1px solid #BBBBBB;
-                                    margin-top: 26px;
-                                    margin-bottom: 20px;
+                                    margin-top: 23px;
+                                    margin-bottom: 13px;
                                     color: #2362AE;
                                     padding-top: 10px;
-                                    padding-bottom: 10px;
+                                    padding-bottom: 17px;
                         }
                         
                         .gitHubNumbers {
@@ -257,13 +258,33 @@
                         }
                         
                         .gitHubRepository {
+                                    width: 100%;
                                     .left {
                                                 .repoUpdated {
-                                                            font-size: 12px;
+                                                            font-size: 11px;
                                                             color: #BBBBBB;
+                                                            margin-top: 0px;
                                                 }
                                                 .repoName {
                                                             font-size: 14px;
+                                                            color: #235294;
+                                                }
+                                    }
+                                    .right {
+                                                width: 30%;
+                                                display: left;
+                                                font-size: 9px;
+                                                h6 {
+                                                            .octicon-star {
+                                                                        .octicon-git-branch {
+                                                                                    margin-left: 8px;
+                                                                                    padding-right: 5px;
+                                                                                    .octicon-git-branch {
+                                                                                                padding-right: 5px;
+                                                                                                padding-left: 5px;
+                                                                                    }
+                                                                        }
+                                                            }
                                                 }
                                     }
                         }

@@ -1,7 +1,9 @@
 /*Mixin Examples*/
 /*@include center()*/
 .container {
-  width: 990px; }
+  width: 990px;
+  display: block;
+  margin: 0 auto; }
 
 body {
   color: #333;
@@ -14,7 +16,6 @@ nav {
   background-color: #F9F9F9; }
   nav .navSearch {
     float: left;
-    margin-left: 228px;
     margin-top: 10px;
     width: 405px; }
     nav .navSearch input {
@@ -22,7 +23,7 @@ nav {
   nav .gitLinks {
     float: left;
     font-weight: bold;
-    margin-left: -49px;
+    margin-left: 15px;
     width: 246px; }
     nav .gitLinks li {
       color: black;
@@ -36,11 +37,11 @@ nav {
   nav .profile {
     display: inline-block;
     float: left;
-    margin-left: 89px;
-    margin-right: 8px;
+    margin-right: 7px;
     padding: 15px 0;
     width: 111px;
-    margin-top: 3px; }
+    margin-top: 3px;
+    margin-left: 84px; }
     nav .profile img {
       float: left;
       max-height: 20px;
@@ -52,7 +53,7 @@ nav {
   nav .profileLinks {
     float: left;
     margin-left: -33px;
-    width: 200px;
+    width: 125px;
     padding-left: 0px;
     padding-top: 4px; }
     nav .profileLinks li {
@@ -109,10 +110,14 @@ nav {
   display: inline-block;
   padding-right: 5px;
   margin-left: 20px; }
+  .followers .title {
+    text-align: center; }
 
 .following {
   width: 40%;
   display: inline-block; }
+  .following .title {
+    text-align: center; }
 
 .right {
   float: right;
@@ -217,17 +222,24 @@ h4 {
     width: 30%;
     display: left;
     font-size: 9px; }
-    .gitHubRepository .right h6 .octicon-star .octicon-git-branch {
-      margin-left: 8px;
-      padding-right: 5px; }
-      .gitHubRepository .right h6 .octicon-star .octicon-git-branch .octicon-git-branch {
-        padding-right: 5px;
-        padding-left: 5px; }
+    .gitHubRepository .right h6 {
+      font-size: 12px;
+      margin-right: 3px;
+      float: right; }
+      .gitHubRepository .right h6 .octicon-star {
+        padding: 0px;
+        margin-left: 4px;
+        margin-right: -1px; }
+        .gitHubRepository .right h6 .octicon-star .octicon-git-branch {
+          margin-left: 8px;
+          padding-right: 5px; }
+          .gitHubRepository .right h6 .octicon-star .octicon-git-branch .octicon-git-branch {
+            padding-left: 15px;
+            padding-right: 0px; }
 
 .octicon-mark-github {
   font-size: 38px;
-  margin-right: 8px;
-  margin-left: -63px; }
+  margin-right: 8px; }
 
 .inputText {
   margin-top: 6px;
@@ -251,3 +263,30 @@ h4 {
   color: #BBBBBB;
   padding-right: 8px;
   margin-top: 7px; }
+
+.rightTop {
+  display: inline-block;
+  float: right;
+  margin-top: 15px; }
+
+.repoTopRight {
+  font-size: 12px;
+  font-weight: 500;
+  color: #BBBBBB;
+  vertical-align: top;
+  display: inline-block; }
+
+li {
+  display: inline; }
+
+.rightTop.language {
+  margin-right: 5px; }
+
+.octicon-star {
+  padding-left: 8px;
+  padding-right: 2px; }
+
+.octBranch {
+  color: #BBBBBB;
+  margin-left: 11px;
+  margin-right: -5px; }

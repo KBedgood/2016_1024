@@ -90,11 +90,13 @@ $(document).ready(function() {
 
 
 </div>
-<div class ="right">
-<h6>${repo.language} <span class="octicon octicon-star">  </span> ${repo.stargazers_count} <span class="octicon octicon-git-branch"> </span>${repo.forks_count}</h6>
-</div>
-
-
+<div class ="rightTop">
+    <ul class="repoTopRight">
+        <li class="language">${repo.language}</li>
+        <li class="starGazerCount"><span class="octicon octicon-star"></span>${repo.stargazers_count}</li>
+        <li class="octBranch"><span class="octicon octicon-git-branch"></span></li>
+        <li class="forks">${repo.forks_count}</li>
+    </ul>
 </div>
 `)
 
